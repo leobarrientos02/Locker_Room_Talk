@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #1f2421;
+}
+
+.joinInnerContainer {
+  width: 40%;
+}
+
+.joinInput {
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.5s ease;
+}
+.joinInput:focus {
+  border-radius: 0px;
+}
+
+.heading {
+  color: white;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #49a078;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.4s ease-in;
+}
+.button:hover {
+  background: #216869;
+  border-radius: 0px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
