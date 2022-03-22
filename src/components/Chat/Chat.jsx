@@ -51,7 +51,7 @@ const Chat = () => {
     socket.on("roomData", ({ users }) => {
       setUsers(users);
     });
-  }, []);
+  }, [messages]);
 
   // function for sending messages
   const sendMessage = (event) => {
@@ -68,6 +68,7 @@ const Chat = () => {
         initial={{ x: "-100%" }}
         animate={{ x: 0 }}
         transition={{ duration: 0.6 }}
+        exit={{ x: "100%" }}
         className="container"
       >
         <InfoBar room={room} />
